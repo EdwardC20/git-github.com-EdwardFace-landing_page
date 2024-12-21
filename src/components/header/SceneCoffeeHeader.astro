@@ -3,14 +3,17 @@ import SceneCoffeeHeaderInfo from "./SceneCoffeeHeaderInfo.astro";
 import SceneCoffeeHeaderNav from "./SceneCoffeeHeaderNav.astro";
 
 ---
-<div class="fondoCoffee">
+<div class="fondoCoffee px-4 py-6 sm:px-6 lg:px-8">
     <SceneCoffeeHeaderNav/>
     <SceneCoffeeHeaderInfo/>
 </div>
 
 <style>
    .fondoCoffee{
-    background-image: url("../../assets/CoffeImageHeader.webp");
+    background-image: url("../../assets/images/CoffeImageHeader.webp");
+    background-size: cover;
+    width: 100%;
+    color: white;
    }
 
 </style>
