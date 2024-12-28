@@ -3,17 +3,35 @@ import SceneCoffeeHeaderInfo from "./SceneCoffeeHeaderInfo.astro";
 import SceneCoffeeHeaderNav from "./SceneCoffeeHeaderNav.astro";
 
 ---
-<div class="fondoCoffee px-4 py-6 sm:px-6 lg:px-8">
-    <SceneCoffeeHeaderNav/>
-    <SceneCoffeeHeaderInfo/>
+<div class="fondoCoffee relative px-4 py-6 sm:px-6 lg:px-8">
+    <div class="overlay absolute inset-0 bg-black opacity-50"></div>
+    <div class="z-10 relative">
+        <SceneCoffeeHeaderNav/>
+        <SceneCoffeeHeaderInfo/> 
+    </div>
+    
 </div>
 
 <style>
    .fondoCoffee{
     background-image: url("../../assets/images/CoffeImageHeader.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     color: white;
+    position: relative;
    }
+
+   .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+        z-index: 1;
+    }
+    
 
 </style>

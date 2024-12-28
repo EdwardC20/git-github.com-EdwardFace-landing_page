@@ -1,21 +1,9 @@
 ---
-
+    import '../../css/EstilosGenerales.css';
 ---
 
 <style>
-    @font-face{
-        font-family: 'ClickerScript';
-        src: url('/fonts/ClickerScript-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face{
-        font-family: 'PlayFair';
-        src: url('/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
+    
 
     #ClickerFontTitle{
         font-family: 'ClickerScript';
@@ -27,6 +15,9 @@
         font-family: 'PlayFair';
         font-weight: normal;
         font-style: normal;
+    }
+    .space-x-4 > li {
+        align-items: center;
     }
 </style>
 
@@ -40,8 +31,8 @@
         <a href="#" class="text-lg transition-transform transform hover:scale-110 mx-7">Contactanos</a>
     </nav>
 
-    <ul class="flex space-x-4">
-        <li><a href="#" class="text-lg transition-transform transform hover:scale-110 mx-2">Ingresar</a></li>
-        <li><a href="#" class="text-lg transition-transform transform hover:scale-110 mx-2 bg-blue-500 text-white px-4 py-2 rounded-l-full rounded-r-full">Registrarse</a></li>
+    <ul class="flex ">
+        <li><button  class="text-lg transition-transform transform hover:scale-110 mx-2">Ingresar</button></li>
+        <li><button class="custom-button rounded-l-full rounded-r-full">Registrarse</button></li>
     </ul>
 </div>

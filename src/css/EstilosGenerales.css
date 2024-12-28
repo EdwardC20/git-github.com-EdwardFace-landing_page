@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "PlayFair";
+  src: url("/fonts/PlayfairDisplay-VariableFont_wght.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClickerScript";
+  src: url("/fonts/ClickerScript-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-button {
+  background-color: #f9c06a;
+  width: 134px;
+  height: 48px;
+  border-radius: 0 24 24 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000; /* Color de texto negro por defecto */
+  font-family: 'PlayFair';
+  font-weight: bold;
+  transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+/* Efecto hover opcional */
+.custom-button:hover {
+  background-color: #f7b14e; /* Un tono ligeramente más oscuro para el hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el mouse */
+}
+
+/* Efecto active opcional */
+.custom-button:active {
+  transform: translateY(1px); /* Efecto de "presionar" el botón */
+}
