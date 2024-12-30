@@ -21,7 +21,7 @@
   cursor: pointer;
   font-size: 16px;
   color: #000000; /* Color de texto negro por defecto */
-  font-family: 'PlayFair';
+  font-family: "PlayFair";
   font-weight: bold;
   transition: all 0.3s ease; /* Transición suave para efectos hover */
 }
@@ -35,4 +35,23 @@
 /* Efecto active opcional */
 .custom-button:active {
   transform: translateY(1px); /* Efecto de "presionar" el botón */
+}
+
+.titulosCoffee {
+  font-family: "PlayFair";
+  font-weight: bold;
+  font-size: 54px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #603809;
+}
+
+.textCoffeParrafo {
+  font-family: "PlayFair";
+  font-size: 22px;
+  line-height: 33px;
+  width: 527px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
